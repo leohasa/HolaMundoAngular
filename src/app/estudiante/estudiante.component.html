@@ -1,0 +1,9 @@
+<h3>Nombre: {{name}}</h3>
+<h3>Edad: {{age}}</h3>
+<h3>Email: {{email}}</h3>
+
+<label for = "inscrito">Inscrito: </label>
+<input type="checkbox" name="inscrito" [checked]="status">
+
+<br>
+<input type="button" value="Cambiar estado inscripcion"  (click)="updateStatus()">

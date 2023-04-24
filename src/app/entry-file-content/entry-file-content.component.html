@@ -1,0 +1,14 @@
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col">
+            <h2>Enviar contenido JSON a la API</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="jsonFile" class="form-label">Seleccionar archivo JSON</label>
+                    <input type="file" class="form-control" id="jsonFile" (change)="onFileSelected($event)" accept=".json">
+                </div>
+                <button type="button" class="btn btn-primary" (click)="sendJson()">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
